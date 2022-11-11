@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import config from "../config.json"
 import styled from "styled-components"
 import { CSSReset } from "../src/components/CSSReset";
@@ -24,6 +25,7 @@ function HomePage() {
 export default HomePage
 
 const StyledHeader = styled.div`
+    background-color: ${({theme})=> theme.backgroundLevel1};
     img {
         width: 90px;
         height: 90px;

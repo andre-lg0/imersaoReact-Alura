@@ -83,7 +83,7 @@ function Header() {
 function TimeLine({ searchValue, ...props }) {
     const playlistNames = Object.keys(props.playlists)
 
-    console.log(playlistNames)
+    // console.log(playlistNames)
     return (
 
         <StyledTimeline>
@@ -91,7 +91,7 @@ function TimeLine({ searchValue, ...props }) {
                 playlistNames.map((playlisName) => {
 
                     const videos = props.playlists[playlisName];
-                    console.log(videos);
+                    // console.log(videos);
                     return (
                         <section key={playlisName}>
                             <h2>{playlisName} </h2>
